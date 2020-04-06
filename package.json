@@ -1,5 +1,5 @@
 {
-	"name": "vscode-morph-ide",
+	"name": "vscode-ide-morph",
 	"description": "VSCode part of a language server",
 	"author": "Fido Garcia",
 	"license": "MIT",
