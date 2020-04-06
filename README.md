@@ -1,1 +1,1 @@
-# vscode-ide-morph
+# vscode-morph-ide

@@ -1,5 +1,5 @@
 {
-	"name": "lsp-morphe-client",
+	"name": "vscode-morph-ide",
 	"description": "VSCode part of a language server",
 	"author": "Fido Garcia",
 	"license": "MIT",
