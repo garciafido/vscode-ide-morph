@@ -17,7 +17,7 @@ let client: LanguageClient;
 
 export async function activate(context: vscode.ExtensionContext) {
 	let serverModule = context.asAbsolutePath(
-		path.join('../server', 'out', 'server.js')
+		path.join('node_modules', 'morph-language-server', 'out', 'server.js')
 	);
 	// The debug options for the server
 	// --inspect=6009: runs the server in Node's Inspector mode so VS Code can attach to the server for debugging

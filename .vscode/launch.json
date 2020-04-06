@@ -20,7 +20,7 @@
 			"request": "attach",
 			"port": 6009,
 			"restart": true,
-			"outFiles": ["${workspaceRoot}/../server/out/**/*.js"]
+			"outFiles": ["${workspaceRoot}/node_modules/morph-language-server/out/server.js"]
 		}
 	],
 	"compounds": [
