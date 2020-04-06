@@ -13,7 +13,7 @@
 		"vscode": "^1.43.0"
 	},
 	"dependencies": {
-		"lsp-morph-server": "github:morphlang/morph-language-server",
+		"morph-language-server": "github:morphlang/morph-language-server",
 		"vscode-languageclient": "^6.1.3"
 	},
 	"activationEvents": [
