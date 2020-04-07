@@ -7,7 +7,7 @@
 	"publisher": "morphlang",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/morphlang/lsp-morph"
+		"url": "https://github.com/morphlang/vscode-ide-morph"
 	},
 	"engines": {
 		"vscode": "^1.43.0"
