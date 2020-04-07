@@ -12,10 +12,6 @@
 	"engines": {
 		"vscode": "^1.43.0"
 	},
-	"dependencies": {
-		"morph-language-server": "github:morphlang/morph-language-server",
-		"vscode-languageclient": "^6.1.3"
-	},
 	"activationEvents": [
 		"onLanguage:morph",
 		"workspaceContains:**/*.n"
@@ -68,6 +64,10 @@
 	"scripts": {
 		"vscode:prepublish": "npm run update-vscode",
 		"watch": "tsc -b -w"
+	},
+	"dependencies": {
+		"morph-language-server": "github:morphlang/morph-language-server",
+		"vscode-languageclient": "^6.1.3"
 	},
 	"devDependencies": {
 		"@types/mocha": "^5.2.7",
