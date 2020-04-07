@@ -4,7 +4,7 @@
 	"icon": "images/icon_agilmind.png",
 	"author": "Fido Garcia",
 	"license": "MIT",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher": "morphlang",
 	"repository": {
 		"type": "git",
