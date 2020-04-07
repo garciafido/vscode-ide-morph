@@ -62,7 +62,6 @@
 		}
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run update-vscode",
 		"watch": "tsc -b -w"
 	},
 	"dependencies": {
