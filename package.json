@@ -69,7 +69,7 @@
 		"postinstall": "npm install"
 	},
 	"dependencies": {
-		"morph-language-server": "^1.0.0",
+		"morph-language-server": "^1.0.1",
 		"vscode-languageclient": "^6.1.3"
 	},
 	"devDependencies": {
