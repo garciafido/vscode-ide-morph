@@ -4,3 +4,4 @@ node_modules
 .vscode-test
 .idea
 package-lock.json
+*.vsix
