@@ -65,11 +65,10 @@
 	},
 	"scripts": {
 		"compile": "tsc -p",
-		"watch": "tsc -w -p",
-		"postinstall": "npm install"
+		"watch": "tsc -w -p"
 	},
 	"dependencies": {
-		"morph-language-server": "^1.0.1",
+		"morph-language-server": "^1.0.2",
 		"vscode-languageclient": "^6.1.3"
 	},
 	"devDependencies": {
