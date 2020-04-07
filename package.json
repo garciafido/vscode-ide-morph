@@ -1,6 +1,7 @@
 {
 	"name": "vscode-ide-morph",
-	"description": "VSCode part of a language server",
+	"displayName": "Morph",
+	"description": "Morph language integration for VSCode",
 	"icon": "images/icon_agilmind.png",
 	"author": "Fido Garcia",
 	"license": "MIT",
@@ -64,9 +65,9 @@
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -b",
-		"watch": "tsc -b -w",
-		"postinstall": "npm install"
+		"compile": "tsc -p",
+		"watch": "tsc -w -p",
+		"postinstall": "node ./node_modules/vscode/bin/install"
 	},
 	"dependencies": {
 		"morph-language-server": "github:morphlang/morph-language-server",
