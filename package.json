@@ -32,7 +32,7 @@
 		"object oriented",
 		"non-imperative"
 	],
-  	"engines": {
+	"engines": {
 		"vscode": "^1.43.0"
 	},
 	"activationEvents": [
@@ -63,8 +63,8 @@
 		],
 		"snippets": [
 			{
-			  "language": "morph",
-			  "path": "./snippets/snippets.json"
+				"language": "morph",
+				"path": "./snippets/snippets.json"
 			}
 		],
 		"configuration": {
@@ -96,12 +96,8 @@
 		"build": "tsc -p .",
 		"watch": "tsc -p . --watch"
 	},
-	"languageServer": {
-		"win32": "https://github.com/latex-lsp/texlab/releases/download/v1.10.0/texlab-x86_64-windows.zip",
-		"linux": "https://github.com/latex-lsp/texlab/releases/download/v1.10.0/texlab-x86_64-linux.tar.gz",
-		"darwin": "https://github.com/latex-lsp/texlab/releases/download/v1.10.0/texlab-x86_64-macos.tar.gz"
-	},
 	"dependencies": {
+		"morph-language-server": "^1.0.3",
 		"vscode-languageclient": "^6.1.3"
 	},
 	"devDependencies": {
