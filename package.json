@@ -9,7 +9,7 @@
 	},
 	"author": "Fido Garcia",
 	"license": "MIT",
-	"version": "0.14.0",
+	"version": "0.15.0",
 	"publisher": "morphlang",
 	"homepage": "https://morphlang.org",
 	"bugs": {
@@ -91,7 +91,8 @@
 		"watch": "tsc -p . --watch",
 		"download-api": "vscode-dts dev",
 		"postdownload-api": "vscode-dts master",
-		"postinstall": "npm run download-api"	},
+		"postinstall": "npm run download-api"
+	},
 	"dependencies": {
 		"vscode-languageclient": "^6.1.3"
 	},
