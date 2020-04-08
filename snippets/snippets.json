@@ -1,9 +1,52 @@
 {
 	"morph": {
-		"prefix": "morph",
+		"prefix": "mo",
 		"body": [
-			"morph ${1:Name} mutates ${2:Type} {}"
+			"morph ${1:Identifier} mutates ${2:Mutates} {",
+			"    $0",
+			"}"
 		],
-		"description": "morph ... mutates ... {}"
+		"description": "morph ..."
+	},
+	"morph_if": {
+		"prefix": "mif",
+		"body": [
+			"morph ${1:Identifier} mutates ${2:Mutates} if (${3:filter}) {",
+			"    $0",
+			"}"
+		],
+		"description": "morph if (...)"
+	},
+	"morph_new": {
+		"prefix": "monif",
+		"body": [
+			"morph ${1:Identifier} mutates ${2:Mutates} {",
+			"    new ${1:edge} -> lambda () => $0",
+			"}"
+		],
+		"description": "morph ... new"
+	},
+	"morph_new_if": {
+		"prefix": "monif",
+		"body": [
+			"morph ${1:Identifier} mutates ${2:Mutates} if (${3:filter}) {",
+			"    new ${1:edge} -> lambda () => $0",
+			"}"
+		],
+		"description": "morph if (...) new"
+	},
+	"edge": {
+		"prefix": "edge",
+		"body": [
+			"${1:edge} -> $0"
+		],
+		"description": "... -> )"
+	},
+	"new": {
+		"prefix": "edge",
+		"body": [
+			"new ${1:edge} -> $0"
+		],
+		"description": "new ... -> )"
 	}
 }
