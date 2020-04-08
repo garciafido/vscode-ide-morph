@@ -92,9 +92,9 @@
 		}
 	},
 	"scripts": {
-		"vscode:prepublish": "tsc -p",
 		"build": "tsc -p .",
-		"watch": "tsc -p . --watch"
+		"watch": "tsc -p . --watch",
+		"postinstall": "npm install"
 	},
 	"dependencies": {
 		"morph-language-server": "^1.0.3",
