@@ -1,0 +1,5 @@
+{
+	"dependencies": {
+		"morph-language-server": "^1.0.3"
+	}
+}
