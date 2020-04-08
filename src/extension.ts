@@ -1,5 +1,6 @@
 import * as path from 'path';
 import * as vscode from 'vscode';
+import {SemanticTokens, legend} from "./SemanticTokens";
 
 import {
 	LanguageClient,
@@ -10,7 +11,7 @@ import {
 
 let client: LanguageClient;
 
-export async function activate(context: vscode.ExtensionContext) {
+export function activate(context: vscode.ExtensionContext) {
 	let serverModule = context.asAbsolutePath(
 		path.join('server', 'node_modules', 'morph-language-server', 'out', 'server.js')
 	);
@@ -46,6 +47,9 @@ export async function activate(context: vscode.ExtensionContext) {
 		serverOptions,
 		clientOptions
 	);
+
+	context.subscriptions.push(vscode.languages.registerDocumentSemanticTokensProvider({ language: 'morph'}, new SemanticTokens(), legend));
+
 
 	// Start the client. This will also launch the server
 	client.start();

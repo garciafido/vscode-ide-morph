@@ -7,7 +7,9 @@
 			"type": "extensionHost",
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
-			"args": ["--extensionDevelopmentPath=${workspaceRoot}"],
+			"args": [
+				"--extensionDevelopmentPath=${workspaceRoot}"
+			],
 			"outFiles": ["${workspaceRoot}/out/**/*.js"],
 			"preLaunchTask": {
 				"type": "npm",
@@ -20,7 +22,7 @@
 			"request": "attach",
 			"port": 6009,
 			"restart": true,
-			"outFiles": ["${workspaceRoot}/node_modules/morph-language-server/out/server.js"]
+			"outFiles": ["${workspaceRoot}/server/node_modules/morph-language-server/out/server.js"]
 		}
 	],
 	"compounds": [

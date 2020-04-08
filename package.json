@@ -40,6 +40,7 @@
 		"workspaceContains:**/*.{m,morph}"
 	],
 	"main": "./out/extension",
+	"enableProposedApi": true,
 	"contributes": {
 		"languages": [
 			{
@@ -52,13 +53,6 @@
 					".m",
 					".morph"
 				]
-			}
-		],
-		"grammars": [
-			{
-				"language": "morph",
-				"scopeName": "source.morph",
-				"path": "./syntaxes/morph.tmLanguage.json"
 			}
 		],
 		"snippets": [
@@ -94,8 +88,10 @@
 	"scripts": {
 		"vscode:prepublish": "npm run compile && cd ./server && npm install && cd ..",
 		"compile": "tsc -p .",
-		"watch": "tsc -p . --watch"
-	},
+		"watch": "tsc -p . --watch",
+		"download-api": "vscode-dts dev",
+		"postdownload-api": "vscode-dts master",
+		"postinstall": "npm run download-api"	},
 	"dependencies": {
 		"vscode-languageclient": "^6.1.3"
 	},
