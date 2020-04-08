@@ -1,0 +1,9 @@
+{
+	"morph": {
+		"prefix": "morph",
+		"body": [
+			"morph ${1:Name} mutates ${2:Type} {}"
+		],
+		"description": "morph ... mutates ... {}"
+	}
+}
