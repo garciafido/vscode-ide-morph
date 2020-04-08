@@ -92,7 +92,7 @@
 		}
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
+		"vscode:prepublish": "npm run compile && npm install --prefix ./out",
 		"compile": "tsc -p .",
 		"watch": "tsc -p . --watch"
 	},
