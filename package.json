@@ -40,7 +40,7 @@
 		"workspaceContains:**/*.{m,morph}"
 	],
 	"main": "./out/extension",
-	"enableProposedApi": true,
+	"enableProposedApi": false,
 	"contributes": {
 		"languages": [
 			{
