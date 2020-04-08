@@ -94,7 +94,7 @@
 	"scripts": {
 		"compile": "tsc -p .",
 		"watch": "tsc -p . --watch",
-		"postinstall": "npm install"
+		"postinstall": "npm install morph-language-server"
 	},
 	"dependencies": {
 		"morph-language-server": "^1.0.3",
